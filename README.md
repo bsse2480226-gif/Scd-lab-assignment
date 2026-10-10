@@ -4,11 +4,11 @@
 
 ### Home Page
 
-![Home Page](screenshots/home2.png)
+![Home Page](Screenshots/home2.png)
 
 ### Home Page - Second View
 
-![Home Page - Second View](screenshots/home1.png)
+![Home Page - Second View](Screenshots/home1.png)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
