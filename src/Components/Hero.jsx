@@ -39,21 +39,21 @@ export default function Hero() {
           </div>
         ))} */}
             <div className="col-12 col-sm-6 col-md-3" >
-                 <StudentCard name={"khuzaima"} id={101} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")} onDelete={() => handleDelete(101)} />
+                 <StudentCard name={"yasir idrees khan"} id={101} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")} onDelete={() => handleDelete(101)} />
             </div>
             <div className="col-12 col-sm-6 col-md-3" >
-                <StudentCard name={"khuzaima"} id={101} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")} onDelete={() => handleDelete(101)} />
+                <StudentCard name={"khuzaima"} id={102} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")} onDelete={() => handleDelete(101)} />
             </div>
             <div className="col-12 col-sm-6 col-md-3" >
-                 <StudentCard name={"khuzaima"} id={101} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")} onDelete={() => handleDelete(101)} />
+                 <StudentCard name={"Wasiq"} id={103} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")} onDelete={() => handleDelete(101)} />
        
             </div>
             <div className="col-12 col-sm-6 col-md-3" >
-                <StudentCard name={"khuzaima"} id={101} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")} onDelete={() => handleDelete(101)} />
+                <StudentCard name={"Mudasir"} id={104} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")} onDelete={() => handleDelete(101)} />
        
             </div> 
             <div className="col-12 col-sm-6 col-md-3" >
-                <StudentCard name={"khuzaima"} id={101} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")} onDelete={() => handleDelete(101)} />
+                <StudentCard name={"Asad"} id={105} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")} onDelete={() => handleDelete(101)} />
        
             </div>
       </div>
