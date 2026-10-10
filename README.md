@@ -1,6 +1,13 @@
 <<<<<<< HEAD
 # React + Vite
 
+## UI Screenshots
+
+### Home Page
+![Home Page](screenshots/home2.png)
+![Home Page](screenshots/home1.png)
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
