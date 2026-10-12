@@ -1,6 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export default function StudentCard({ name, id, major, year, gpa, onViewProfile}) {
+export default function StudentCard({
+  name,
+  id,
+  major,
+  year,
+  gpa,
+  onViewProfile,
+  showprofile
+}) {
+  const [Views, updateviews] = useState(0);
+  const [showdetails, Updatedshowdetails] = useState(false);
+
+  function handleview() {
+    updateviews(Views + 1);
+  }
+
   return (
     <div className="card shadow-sm border-0 h-100">
       {/* Avatar Placeholder Section */}
@@ -20,26 +35,51 @@ export default function StudentCard({ name, id, major, year, gpa, onViewProfile}
       {/* Card Details */}
       <div className="card-body">
         <h5 className="card-title fw-bold mb-3">{name}</h5>
-        <p className="card-text mb-1 text-secondary">ID: {id}</p>
-        <p className="card-text mb-1 text-secondary">Major: {major}</p>
-        <p className="card-text mb-1 text-secondary">Year: {year}</p>
-        <p className="card-text mb-3 text-secondary">GPA: {gpa}</p>
+
+        <p className="card-text mb-1 text-secondary">
+          ID: {id}
+        </p>
+
+        <p className="card-text mb-1 text-secondary">
+          Major: {major}
+        </p>
+
+        <p className="card-text mb-1 text-secondary">
+          Year: {year}
+        </p>
+
+        <p className="card-text mb-3 text-secondary">
+          GPA: {gpa}
+        </p>
+
+        <p className="card-text mb-3 text-secondary">
+          View profile: {Views}
+        </p>
 
         {/* Action Buttons */}
         <div className="d-flex gap-2">
-          <button 
-            className="btn btn-outline-primary btn-sm px-3" 
-            onClick={onViewProfile}
+          <button
+            className="btn btn-outline-danger btn-sm px-3"
+            onClick={handleview}
           >
-            View Profile
+            Increment view
           </button>
-          <button 
-            className="btn btn-outline-danger btn-sm px-3" 
-          
+
+          <button
+            className="btn btn-outline-primary btn-sm px-3"
+            onClick={() => Updatedshowdetails(!showdetails)}
           >
-            Delete
+            {showdetails ? "Hide Details" : "Show Details"}
           </button>
         </div>
+
+        {/* Show or Hide Details */}
+        {showdetails && (
+          <div className="mt-3">
+            <p>Email: student@example.com</p>
+            <p>Phone: 0300-1234567</p>
+          </div>
+        )}
       </div>
     </div>
   );
