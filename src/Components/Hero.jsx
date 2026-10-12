@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import StudentCard from './StudentCard';
 import Breadcrumb from './Breadcrumb';
+import Notification from './Notification';
 
 
 export default function Hero() {
@@ -39,21 +40,21 @@ export default function Hero() {
           </div>
         ))} */}
             <div className="col-12 col-sm-6 col-md-3" >
-                 <StudentCard name={"yasir idrees khan"} id={101} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")} onDelete={() => handleDelete(101)} />
+                 <StudentCard name={"yasir idrees khan"} id={101} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")}/>
             </div>
             <div className="col-12 col-sm-6 col-md-3" >
-                <StudentCard name={"khuzaima"} id={102} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")} onDelete={() => handleDelete(101)} />
+                <StudentCard name={"khuzaima"} id={102} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")}/>
             </div>
             <div className="col-12 col-sm-6 col-md-3" >
-                 <StudentCard name={"Wasiq"} id={103} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")} onDelete={() => handleDelete(101)} />
+                 <StudentCard name={"Wasiq"} id={103} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")}/>
        
             </div>
             <div className="col-12 col-sm-6 col-md-3" >
-                <StudentCard name={"Mudasir"} id={104} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")} onDelete={() => handleDelete(101)} />
+                <StudentCard name={"Mudasir"} id={104} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")}/>
        
             </div> 
             <div className="col-12 col-sm-6 col-md-3" >
-                <StudentCard name={"Asad"} id={105} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")} onDelete={() => handleDelete(101)} />
+                <StudentCard name={"Asad"} id={105} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")}/>
        
             </div>
       </div>
@@ -71,6 +72,7 @@ export default function Hero() {
       </ul>
     </nav>
     </div>
+    <Notification/>
     
       <Footer/>
     
