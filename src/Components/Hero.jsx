@@ -3,7 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import StudentCard from './StudentCard';
 import Breadcrumb from './Breadcrumb';
-import Notification from './Notification';
+
 
 
 export default function Hero() {
@@ -72,7 +72,7 @@ export default function Hero() {
       </ul>
     </nav>
     </div>
-    <Notification/>
+  
     
       <Footer/>
     

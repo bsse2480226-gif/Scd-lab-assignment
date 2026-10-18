@@ -27,12 +27,12 @@ export default function Header() {
           {/* Main Navigation Links */}
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item me-2">
-              <a className="nav-link text-dark" href="#">
+              <a className="nav-link text-dark" href="/">
                 Dashboard
               </a>
             </li>
             <li className="nav-item me-2">
-              <a className="nav-link text-dark" href="#">
+              <a className="nav-link text-dark" href="/about">
                 Students
               </a>
             </li>
