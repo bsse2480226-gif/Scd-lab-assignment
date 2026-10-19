@@ -26,19 +26,7 @@ export default function Hero() {
           <button className="btn btn-dark btn-sm">Add New Student</button>
         </div>
       <div className="row g-4">
-        {/* {students.map((student) => (
-          <div className="col-12 col-sm-6 col-md-3" key={student.id}>
-            <StudentCard
-              name={student.name}
-              id={student.id}
-              major={student.major}
-              year={student.year}
-              gpa={student.gpa}
-              onViewProfile={() => handleViewProfile(student.name)}
-              onDelete={() => handleDelete(student.id)}
-            />
-          </div>
-        ))} */}
+ 
             <div className="col-12 col-sm-6 col-md-3" >
                  <StudentCard name={"yasir idrees khan"} id={101} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")}/>
             </div>
@@ -55,7 +43,6 @@ export default function Hero() {
             </div> 
             <div className="col-12 col-sm-6 col-md-3" >
                 <StudentCard name={"Asad"} id={105} major={"Computer Science"} year={2} gpa={3.8} onViewProfile={() => handleViewProfile("Khuzaima")}/>
-       
             </div>
       </div>
       <nav aria-label="Page navigation" className="d-flex justify-content-center my-4">
